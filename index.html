@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Role</title>
+    <script>
+        function goToPage(role) {
+            if (role === 'admin') {
+                window.location.href = "adminlogin.html";
+            } else if (role === 'user') {
+                window.location.href = "userlogin.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Select Your Role</h2>
+    <button onclick="goToPage('user')">User</button>
+    <button onclick="goToPage('admin')">Admin</button>
+</body>
+</html>
